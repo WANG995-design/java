@@ -1,4 +1,9 @@
 sky:
+  minio:
+    endpoint: http://192.168.76.129:9000
+    access-key: minioadmin
+    secret-key: minioadmin
+    bucket-name: test-bucket
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     host: localhost
@@ -6,3 +11,4 @@ sky:
     database: sky_take_out
     username: root
     password: 123456
+
