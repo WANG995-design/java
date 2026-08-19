@@ -92,7 +92,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         // 设置当前记录人和id
         //TODO 动态获取人和id
-        employee.setCreateUser(BaseContext.getCurrentId());git credential reject
+        employee.setCreateUser(BaseContext.getCurrentId());
         employee.setUpdateUser(BaseContext.getCurrentId());
         employeeMapper.insert(employee);
     }
