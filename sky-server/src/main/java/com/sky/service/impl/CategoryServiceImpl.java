@@ -120,7 +120,7 @@ public class CategoryServiceImpl  implements CategoryService {
 
     @Override
     public List<Category> QueryType(Integer type) {
-       List<Category>  list = categoryMapper.QueryTpye(type);
+       List<Category>  list = categoryMapper.QueryType(type);
         return  list ;
     }
 }
