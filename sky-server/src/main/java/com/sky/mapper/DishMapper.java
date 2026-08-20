@@ -1,6 +1,9 @@
 package com.sky.mapper;
 
 
+import com.github.pagehelper.Page;
+import com.sky.dto.DishPageQueryDTO;
+import com.sky.entity.Dish;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.context.annotation.Bean;
@@ -13,4 +16,8 @@ public interface DishMapper {
      */
     @Select("select count(id) from dish where category_id = #{categoryId}")
     Integer countByCategoryId(Long categoryId);
+
+    Page<Dish> DishPageQuery(DishPageQueryDTO dishPageQueryDTO);
+
+    void DishStatus(Integer status, Long id);
 }
