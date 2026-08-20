@@ -31,6 +31,6 @@ public interface CategoryMapper {
 
     @Select("select * from category where status = 1 " +
             "and type = #{type} " +
-            "order by sort ascii, create_time desc")
+            "order by sort asc, create_time desc")
     List<Category> QueryTpye(Integer type);
 }
